@@ -161,6 +161,8 @@ class Main {
     }
 
     static DataPipeline createDataPipeline() {
+        // Note: Credentials were created in the .aws/credentials directory. For more details on how to set that up, follow this link:
+        // https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
         return DataPipelineClientBuilder.standard().withRegion("us-west-2").build()
     }
 }
